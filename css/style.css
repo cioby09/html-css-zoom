@@ -23,6 +23,7 @@ body {
 
 /* Layout */
 .container {
+    position: relative;
     overflow: auto;
     height: calc(100vh - 80px);
     width: 100%;
@@ -61,8 +62,48 @@ body {
     font-size: 0.8rem;
 }
 
+.fullscreen, .speaker-view{
+    background-color: #4A4A4A;
+    padding: 5px;
+    border-radius: 5px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 5px;
+}
+
+.fullscreen {
+    right: 5px;
+}
+
+.speaker-view {
+    right: 30px;
+}
+
 /* Toolbar */
 .toolbar {
     background-color: #222222;
     height: 80px;
+}
+
+.tools a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+.icon-text {
+    font-size: 1rem;
+}
+
+.angle {
+    font-size: 0.7rem;
+}
+
+.media-tools {
+    width: 20%;
 }
