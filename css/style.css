@@ -22,15 +22,15 @@ body {
 }
 
 /* Layout */
-
 .container {
     overflow: auto;
-    height: 100vh;
+    height: calc(100vh - 80px);
     width: 100%;
 }
 
 .gallery {
     margin: 5rem 5rem;
+    margin-bottom: 0;
 }
 
 .col {
@@ -39,7 +39,9 @@ body {
     /* border: 2px solid blue; */
 }
 
+/* Webcam */
 .webcam {
+    position: relative;
     padding: 7px 3px;
     /* Debug */
     /* border: 2px solid blue; */
@@ -47,4 +49,20 @@ body {
 
 .webcam img {
     width: 100%;
+}
+
+/* Tags */
+.tag {
+    background-color: rgba(128, 128, 128, 0.6);
+    padding: 5px;
+    position: absolute;
+    left: 3px;
+    bottom: 7px;
+    font-size: 0.8rem;
+}
+
+/* Toolbar */
+.toolbar {
+    background-color: #222222;
+    height: 80px;
 }
