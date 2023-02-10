@@ -109,6 +109,10 @@ body {
     font-size: 0.7rem;
 }
 
+.share-icon {
+    color: #4BC800;
+}
+
 .media-tools, 
 .call-tools {
     list-style-type: none;
